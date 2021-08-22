@@ -256,6 +256,7 @@ MonoBehaviour:
   iconscore: {fileID: 1857285894}
   scene: {fileID: 727297666}
   Bscene: {fileID: 0}
+  afp: {fileID: 1388007776}
   scoretext: {fileID: 1414902630}
   currentScoreText: {fileID: 812827709}
   bestScoreText: {fileID: 2052423627}

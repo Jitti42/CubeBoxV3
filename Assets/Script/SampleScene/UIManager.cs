@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
     public GameObject iconscore;
     public SampleScene scene;
     public BonusScene Bscene;
-    //public GameObject namePanel;
+    public Cirby afp;
     //HUD
     public Text scoretext;
     static int score = 0;
@@ -53,7 +53,7 @@ public class UIManager : MonoBehaviour
         Resume();
         iconscore.SetActive(true);
         PausePanel.SetActive(false);
-
+        afp.AfterPAuse();
     }
 
    void Resume()

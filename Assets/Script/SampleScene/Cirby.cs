@@ -52,7 +52,7 @@ public class Cirby : MonoBehaviour
             return;
         
         _audio.mute = false;
-        this.GetComponent<Rigidbody2D>().velocity = new Vector2(this.GetComponent<Rigidbody2D>().velocity.x, 2);
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(this.GetComponent<Rigidbody2D>().velocity.x, 4);
         uiManager.IncreaseScore();
         
     }
@@ -62,7 +62,7 @@ public class Cirby : MonoBehaviour
 
            
         loudness = GetAveragedVolume() * sentivity;
-        if(loudness > 1 )
+        if(loudness > 1.5 )
         {
             
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(this.GetComponent<Rigidbody2D>().velocity.x, 2);
@@ -100,6 +100,9 @@ public class Cirby : MonoBehaviour
         uiManager.ShowResult();
     }
     
-    
+    public void AfterPAuse()
+    {
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(this.GetComponent<Rigidbody2D>().velocity.x, 3);
+    }
     
 }
