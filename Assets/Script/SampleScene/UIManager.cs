@@ -123,8 +123,8 @@ public class UIManager : MonoBehaviour
         
         hudPanel.SetActive(false);
         resultPanel.SetActive(true);
-        pauseMenuUI.SetActive(true);
-        //namePanel.SetActive(true);
+        pauseMenuUI.SetActive(false);
+        
         currentScoreText.text = score.ToString();
 
         int bestScore = PlayerPrefs.GetInt("BestScore");
